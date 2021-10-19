@@ -6,7 +6,7 @@ In this code challenge you are tasked with writing a function that reverses the 
 
 Below is an image of the basic idea of the algorithm employed to complete this taste. This image was made with Miro.
 
-<img src="../images/reverse-array-whiteboard.png" alt="reverse-array" />
+<img src="./reverse-array.png" alt="reverse-array" />
 
 ## Approach & Efficiency
 

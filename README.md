@@ -11,3 +11,4 @@ Antoine Charette
 ## Table of Contents
 
 - [Array Reverse](./array-reverse/README.md)
+- [Array Insert Shift](./array-insert-shift/README.md)
