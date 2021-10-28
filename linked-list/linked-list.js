@@ -1,3 +1,5 @@
+const { Node } = require("acorn");
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -17,7 +19,8 @@ class LinkedList {
     }
   }
 
-  insert(newHead) {
+  insert(value) {
+    const newHead = new Node(value);
     const newNext = this.head;
     this.head = newHead;
     newHead.next = newNext;

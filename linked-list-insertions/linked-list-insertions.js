@@ -19,7 +19,8 @@ class LinkedList {
     }
   }
 
-  insert(newHead) {
+  insert(value) {
+    const newHead = new Node(value);
     const newNext = this.head;
     this.head = newHead;
     newHead.next = newNext;
@@ -84,24 +85,7 @@ class LinkedList {
   }
 }
 
-const list = new LinkedList();
-list.head = new Node(10);
-list.head.next = new Node(20);
-list.head.next.next = new Node(40);
-list.head.next.next.next = new Node(80);
-
-list.insert(new Node(5));
-console.log(list); // Why does this not show me the whole linked list?????
-const includes = list.includes(10);
-console.log(includes);
-
-console.log(list.toString());
-
-list.append(160);
-console.log(list.toString());
-
-list.insertBefore(20, 15);
-console.log(list.toString());
-
-list.insertAfter(20, 30);
-console.log(list.toString());
+module.exports = {
+  Node,
+  LinkedList,
+};

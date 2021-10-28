@@ -1,0 +1,23 @@
+{
+  "name": "code401-data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevAOC/code401-data-structures-and-algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevAOC/code401-data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/DevAOC/code401-data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
