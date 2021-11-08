@@ -13,6 +13,25 @@ class BinaryTree {
     this.root = null;
   }
 
+  adds(current, value) {
+    if (!current) {
+      current = new Node(value);
+    }
+    if (current.value > value) {
+      if (!current.left) {
+        current.left = new Node(value);
+      } else {
+        this.adds(current.left, value);
+      }
+    } else if (current.value < value) {
+      if (!current.right) {
+        current.right = new Node(value);
+      } else {
+        this.adds(current.right, value);
+      }
+    }
+  }
+
   contains(value) {
     let doesContain = false;
     this.preOrder(this.root, value);
