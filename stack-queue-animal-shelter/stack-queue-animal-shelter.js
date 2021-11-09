@@ -34,3 +34,8 @@ class AnimalShelter {
     }
   }
 }
+
+module.exports = {
+  Animal,
+  AnimalShelter,
+};
