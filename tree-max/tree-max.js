@@ -23,7 +23,7 @@ class BinaryTree {
   }
 
   findMax(current) {
-    if (current.value > this.tempMax) {
+    if (current.value > highest) {
       highest = current.value;
     }
 
