@@ -17,22 +17,21 @@ class BinaryTree {
     if (!this.root) {
       throw new Error("No root");
     }
-    let highest = null;
-    this.findMax(this.root);
-    return highest;
+    let highest = 0;
+    return this.findMax(this.root, highest);
   }
 
-  findMax(current) {
+  findMax(current, highest) {
     if (current.value > highest) {
-      highest = current.value;
+      return current.value;
     }
 
     if (current.left) {
-      this.findMax(current.left);
+      return this.findMax(current.left, highest);
     }
 
     if (current.right) {
-      this.findMax(current.right);
+      return this.findMax(current.right, highest);
     }
   }
 
