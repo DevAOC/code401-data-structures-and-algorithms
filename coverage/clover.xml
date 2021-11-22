@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636604167711" clover="3.2.0">
-  <project timestamp="1636604167711" name="All files">
-    <metrics statements="440" coveredstatements="210" conditionals="194" coveredconditionals="52" methods="80" coveredmethods="43" elements="714" coveredelements="305" complexity="0" loc="440" ncloc="440" packages="10" files="10" classes="10"/>
+<coverage generated="1637618761046" clover="3.2.0">
+  <project timestamp="1637618761046" name="All files">
+    <metrics statements="449" coveredstatements="219" conditionals="196" coveredconditionals="54" methods="81" coveredmethods="44" elements="726" coveredelements="317" complexity="0" loc="449" ncloc="449" packages="11" files="11" classes="11"/>
+    <package name="insertion-sort">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="insertion-sort.js" path="/Users/antoinecharette/Documents/projects/codefellows/code401/code401-data-structures-and-algorithms/insertion-sort/insertion-sort.js">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="24" type="stmt"/>
+        <line num="6" count="24" type="stmt"/>
+        <line num="7" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="28" type="stmt"/>
+        <line num="9" count="28" type="stmt"/>
+        <line num="11" count="24" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+      </file>
+    </package>
     <package name="linked-list-insertions">
       <metrics statements="46" coveredstatements="42" conditionals="10" coveredconditionals="7" methods="9" coveredmethods="8"/>
       <file name="linked-list-insertions.js" path="/Users/antoinecharette/Documents/projects/codefellows/code401/code401-data-structures-and-algorithms/linked-list-insertions/linked-list-insertions.js">
