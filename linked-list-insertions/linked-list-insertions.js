@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 class Node {
   constructor(value) {
@@ -39,12 +39,12 @@ class LinkedList {
 
   toString() {
     let current = this.head;
-    let string = "";
+    let string = '';
     while (current) {
       string += `{ ${current.value} } -> `;
       current = current.next;
     }
-    return (string += "NULL");
+    return (string += 'NULL');
   }
 
   append(value) {

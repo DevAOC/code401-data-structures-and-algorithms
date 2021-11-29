@@ -1,5 +1,3 @@
-const { Node } = require("acorn");
-
 class Node {
   constructor(value) {
     this.value = value;
@@ -39,12 +37,12 @@ class LinkedList {
 
   toString() {
     let current = this.head;
-    let string = "";
+    let string = '';
     while (current) {
       string += `{ ${current.value} } -> `;
       current = current.next;
     }
-    return (string += "NULL");
+    return (string += 'NULL');
   }
 }
 
@@ -60,3 +58,5 @@ const includes = list.includes(10);
 console.log(includes);
 
 console.log(list.toString());
+
+module.exports = LinkedList;
