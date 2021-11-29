@@ -1,33 +1,33 @@
-"use strict";
+'use strict';
 
-const mergeSort = require("../merge-sort.js");
+const mergeSort = require('./merge-sort.js');
 
-describe("Testing merge sort function", () => {
-  it("Should be able to sort an array", () => {
+describe('Testing merge sort function', () => {
+  it('Should be able to sort an array', () => {
     const arr = [8, 4, 23, 42, 16, 15];
 
     expect(mergeSort(arr)).toStrictEqual([4, 8, 15, 16, 23, 42]);
   });
 
-  it("Should be able to sort an array with one value", () => {
+  it('Should be able to sort an array with one value', () => {
     const arr = [8];
 
     expect(mergeSort(arr)).toStrictEqual([8]);
   });
 
-  it("Should be able to sort an array with negative values", () => {
+  it('Should be able to sort an array with negative values', () => {
     const arr = [-8, 4, 23, 42, 16, 15];
 
     expect(mergeSort(arr)).toStrictEqual([-8, 4, 15, 16, 23, 42]);
   });
 
-  it("Should be able to sort an array with value of 0", () => {
+  it('Should be able to sort an array with value of 0', () => {
     const arr = [0, 4, 23, 42, 16, 15];
 
     expect(mergeSort(arr)).toStrictEqual([0, 4, 15, 16, 23, 42]);
   });
 
-  it("Should be able to sort an array thats already sorted", () => {
+  it('Should be able to sort an array thats already sorted', () => {
     const arr = [0, 4, 15, 16, 23, 42];
 
     expect(mergeSort(arr)).toStrictEqual([0, 4, 15, 16, 23, 42]);
