@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 class Node {
   constructor(value) {
@@ -13,25 +13,27 @@ class BinaryTree {
     this.root = null;
   }
 
-  treeMax() {
-    if (!this.root) {
-      throw new Error("No root");
-    }
-    let highest = 0;
-    return this.findMax(this.root, highest);
-  }
-
-  findMax(current, highest) {
-    if (current.value > highest) {
-      return current.value;
-    }
-
-    if (current.left) {
-      return this.findMax(current.left, highest);
-    }
-
-    if (current.right) {
-      return this.findMax(current.right, highest);
+  treeMax(current = this.root, highest = 0) {
+    if (this.root) {
+      let left, right;
+      if (current.value > highest) {
+        highest = current.value;
+      }
+      if (current.left) {
+        left = this.treeMax(current.left, highest);
+        if (left > highest) {
+          highest = left;
+        }
+      }
+      if (current.right) {
+        right = this.treeMax(current.right, highest);
+        if (right > highest) {
+          highest = right;
+        }
+      }
+      return highest;
+    } else {
+      throw new Error('No root');
     }
   }
 
@@ -95,9 +97,9 @@ class BinaryTree {
     }
   }
 
-  postOrder(current, highest) {
+  postOrder(current) {
     if (!current) {
-      throw new Error("No value");
+      throw new Error('No value');
     }
 
     if (current.left) {

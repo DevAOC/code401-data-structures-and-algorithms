@@ -48,11 +48,15 @@ class LinkedList {
   }
 
   append(value) {
-    let current = this.head;
-    while (current.next) {
-      current = current.next;
+    if (this.head) {
+      let current = this.head;
+      while (current.next) {
+        current = current.next;
+      }
+      current.next = new Node(value);
+    } else {
+      return (this.head = new Node(value));
     }
-    current.next = new Node(value);
   }
 
   insertBefore(value, newValue) {
