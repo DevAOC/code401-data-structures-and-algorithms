@@ -33,10 +33,9 @@ const findDuplicate = (words, map) => {
 
 const getMostFrequent = (map) => {
   let result = ' Most frequently used words: ';
+  const mostFrequent = [];
 
-  let mostFrequent = [];
-
-  for (let word of Object.keys(map)) {
+  for (const word of Object.keys(map)) {
     if (!mostFrequent[0]) mostFrequent[0] = { word, count: map[word] };
     else if (map[word] > mostFrequent[0].count) {
       mostFrequent[2] = mostFrequent[1];
@@ -52,7 +51,7 @@ const getMostFrequent = (map) => {
   }
 
   for (let entry of mostFrequent) {
-    if (entry) result += `[${entry.word}: count: ${entry.count}]`;
+    if (entry) result += `[${entry.word}: ${entry.count}]`;
   }
 
   return result;
@@ -61,8 +60,8 @@ const getMostFrequent = (map) => {
 const getCounts = (map) => {
   let result = ' All words and their counts: ';
 
-  for (let word of Object.keys(map)) {
-    result += `[${word}: count: ${map[word]}]`;
+  for (const word of Object.keys(map)) {
+    result += `[${word}: ${map[word]}]`;
   }
 
   return result;
