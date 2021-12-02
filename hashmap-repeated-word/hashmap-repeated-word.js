@@ -1,11 +1,11 @@
-const repeatedWords = (str) => {
+const hashmapRepeatedWord = (str) => {
   const words = str.split(/[ ,.]+/);
   const map = [];
   let result = '';
 
   result += findDuplicate(words, map);
   result += getMostFrequent(map);
-  result += getWordsAndCounts(map);
+  result += getCounts(map);
 
   console.log(result);
   return result;
@@ -58,7 +58,7 @@ const getMostFrequent = (map) => {
   return result;
 };
 
-const getWordsAndCounts = (map) => {
+const getCounts = (map) => {
   let result = ' All words and their counts: ';
 
   for (let word of Object.keys(map)) {
@@ -68,4 +68,4 @@ const getWordsAndCounts = (map) => {
   return result;
 };
 
-module.exports = repeatedWords;
+module.exports = hashmapRepeatedWord;
