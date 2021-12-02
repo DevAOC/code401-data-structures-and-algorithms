@@ -14,7 +14,7 @@ const findDuplicate = (words, map) => {
   let result = '';
   let firstRepeatFound = false;
 
-  for (const word of words) {
+  for (let word of words) {
     word = word.toLowerCase();
     if (!map[word]) {
       map[word] = 1;
@@ -57,7 +57,7 @@ const getMostFrequent = (map) => {
 };
 
 const getCounts = (map) => {
-  let result = ' All words and their counts: ';
+  let result = ' Counts: ';
 
   for (const word of Object.keys(map)) {
     result += `[${word}: ${map[word]}]`;
