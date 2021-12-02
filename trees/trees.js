@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 class Node {
   constructor(value) {
@@ -13,7 +13,7 @@ class BinaryTree {
     this.root = null;
   }
 
-  adds(current, value) {
+  adds(value, current = this.root) {
     if (!current) {
       current = new Node(value);
     }
