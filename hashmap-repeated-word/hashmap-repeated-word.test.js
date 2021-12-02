@@ -13,13 +13,13 @@ describe('Tests hashmap-repeated-word', () => {
   it('Should return a string that shows the most frequently used words', () => {
     const result = hashmapRepeatedWord(book2);
 
-    expect(result.slice(33, 107)).toBe('Most frequently used words: [very: count: 5][is: count: 4][this: count: 2]');
+    expect(result.slice(33, 107)).toBe('Most frequently used words: [very: 5][is: 4][this: 2]');
   });
   it('Should return a string that shows the count of every word in the book', () => {
     const result = hashmapRepeatedWord(book2);
 
     expect(result.slice(108)).toBe(
-      'All words and their counts: [this: count: 2][is: count: 4][my: count: 1][book: count: 2][it: count: 2][very: count: 5][awesome: count: 2][i: count: 1][lied: count: 1][not: count: 1][garbage: count: 1][: count: 1]'
+      'All words and their counts: [this: 2][is: 4][my: 1][book: 2][it: 2][very: 5][awesome: 2][i: 1][lied: 1][not: 1][garbage: 1][: 1]'
     );
   });
 });

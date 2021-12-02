@@ -7,7 +7,6 @@ const hashmapRepeatedWord = (str) => {
   result += getMostFrequent(map);
   result += getCounts(map);
 
-  console.log(result);
   return result;
 };
 
