@@ -1,4 +1,4 @@
-# Reverse and Array
+# Reverse an Array
 
 In this code challenge you are tasked with writing a function that reverses the contents of an array. You may not use any built in array methods to complete this task.
 
